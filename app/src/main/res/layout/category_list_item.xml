@@ -7,7 +7,7 @@
     <ImageView
             android:layout_width="0dp"
             android:layout_height="150dp" tools:srcCompat="@drawable/hatimage"
-            android:id="@+id/categoryImagehat"
+            android:id="@+id/categoryImage"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"/>
@@ -15,10 +15,10 @@
             android:text="Hats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/categoryTextHat"
-            app:layout_constraintTop_toTopOf="@+id/categoryImagehat" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/categoryText"
+            app:layout_constraintTop_toTopOf="@+id/categoryImage" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/categoryImagehat" android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/categoryImage" android:textSize="24sp"
             android:textColor="#ffffff" android:fontFamily="sans-serif" android:layout_marginTop="8dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
