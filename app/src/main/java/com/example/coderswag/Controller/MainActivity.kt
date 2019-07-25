@@ -2,6 +2,7 @@ package com.example.coderswag.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.coderswag.Adapters.CategoryAdapter
 import com.example.coderswag.R
 import com.example.coderswag.Services.DataService
@@ -16,9 +17,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //getting data into UI element (list view). You need an adapter for that (needs to know context, the layout, and where the hell the data is) :)
-        adapter = CategoryAdapter(this,
-            DataService.categories)
+        adapter = CategoryAdapter(this, DataService.categories)
         categoryListView.adapter = adapter
+
+
+
     }
 
 }
