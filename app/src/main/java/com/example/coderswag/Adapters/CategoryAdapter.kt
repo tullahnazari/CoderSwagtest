@@ -9,11 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.coderswag.Model.Category
 import com.example.coderswag.R
-//in list views, you should recycle by using view holder pattern
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
-
-    val context = context
-    val categories = categories
+//in list views, you should recycle by using view Holder pattern
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryView: View
